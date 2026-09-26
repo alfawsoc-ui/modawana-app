@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="المدونة">
+  <meta name="description" content="برنامج المدونة - إدخال مؤقت وتصدير Excel">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>برنامج المدونة</title>
+</head>
+<body>
+  <header class="topbar">
+    <button id="menuBtn" class="icon-btn" aria-label="القائمة">☰</button>
+    <div class="brand">
+      <span class="brand-mark">⚓</span>
+      <div><strong>برنامج المدونة</strong><small>إدخال مؤقت وتصدير Excel</small></div>
+    </div>
+    <div class="top-actions">
+      <button id="themeBtn" class="icon-btn" title="المظهر">☀️</button>
+      <button id="installBtn" class="install-btn hidden">📲 تثبيت التطبيق</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <nav>
+        <button class="nav-item active" data-page="home">🏠 الرئيسية</button>
+        <button class="nav-item" data-page="basra">⚓ ميناء البصرة</button>
+        <button class="nav-item" data-page="omya">⚓ ميناء العمية</button>
+        <button class="nav-item" data-page="catering">🍱 الاعاشة</button>
+        <button class="nav-item" data-page="tug">🚢 بدل الساحبات</button>
+        <button class="nav-item" data-page="delegations">👥 الوفود</button>
+        <button class="nav-item" data-page="names">📋 الأسماء</button>
+        <button class="nav-item" data-page="survey">🔎 استبيان عن موظف</button>
+        <button class="nav-item" data-page="companies">🏢 موافقة الشركات</button>
+        <button class="nav-item" data-page="mail">✉️ البريد والمراسلات</button>
+        <button class="nav-item" data-page="settings">⚙️ الإعدادات</button>
+      </nav>
+    </aside>
+
+    <main id="app" class="content"></main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="app.js"></script>
+</body>
+</html>
