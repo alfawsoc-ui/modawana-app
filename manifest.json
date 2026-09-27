@@ -1,0 +1,19 @@
+{
+  "name": "برنامج المدونة",
+  "short_name": "المدونة",
+  "description": "برنامج المدونة - إدخال البيانات وتصدير Excel والبريد والمراسلات وGoogle Drive",
+  "start_url": "./",
+  "display": "standalone",
+  "dir": "rtl",
+  "lang": "ar",
+  "theme_color": "#0f172a",
+  "background_color": "#f3f6fa",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
