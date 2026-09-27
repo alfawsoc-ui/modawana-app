@@ -1,1 +1,0 @@
-Private project scaffold generated for the user. No external package source code is bundled; SheetJS is loaded from its CDN at runtime.
